@@ -199,17 +199,17 @@ export class FormControls {
 
   private updateSubmitButtonState(): void {
     const allRequirementsMet =
-      (this.cardNumberInput.value.length === 18 ||
-        this.cardNumberInput.value.length === 19) &&
+      (this.cardNumberInput.value.length === 18 ||  // 18 because of the space characters
+        this.cardNumberInput.value.length === 19) && // 19 because of the space characters
       this.cardNumberInput.value[0] ===
         this.cardNumberInput.value[this.cardNumberInput.value.length - 1] &&
-      (this.cardCvvInput.value.length === 3 ||
-        this.cardCvvInput.value.length === 4) &&
-      (this.cardZipCodeInput.value.length === 5 ||
-        this.cardZipCodeInput.value.length === 9) &&
+      (this.cardCvvInput.value.length === 3 || // 3 or 4 digits
+        this.cardCvvInput.value.length === 4) && // 3 or 4 digits
+      (this.cardZipCodeInput.value.length === 5 || // 5 or 9 digits
+        this.cardZipCodeInput.value.length === 9) && // 5 or 9 digits
       this.cardFirstNameInput.value.length >= 1 &&
       this.cardLastNameInput.value.length >= 1 &&
-      this.cardExpiryInput.value.length === 5;
+      this.cardExpiryInput.value.length === 5; // MM/YY format length
 
     console.log(allRequirementsMet);
 
