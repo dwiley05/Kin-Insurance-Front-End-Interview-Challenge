@@ -52,6 +52,8 @@ export class FormControls {
     this.initEventListeners();
   }
 
+  // starts the event listeners for the form controls,
+  // used for updating the card display and submit button state
   private initEventListeners() {
     this.cardNumberInput.addEventListener(
       "input",
@@ -148,7 +150,7 @@ export class FormControls {
     let expiry = this.cardExpiryInput.value;
 
     if (this.cardExpiryDisplay) {
-      console.log(event);
+      // Add a slash after the first two digits unless the user is deleting the slash
       if (expiry.length === 2 && event.inputType !== "deleteContentBackward") {
         expiry = expiry + "/";
         this.cardExpiryInput.value = expiry;
@@ -199,7 +201,7 @@ export class FormControls {
 
   private updateSubmitButtonState(): void {
     const allRequirementsMet =
-      (this.cardNumberInput.value.length === 18 ||  // 18 because of the space characters
+      (this.cardNumberInput.value.length === 18 || // 18 because of the space characters
         this.cardNumberInput.value.length === 19) && // 19 because of the space characters
       this.cardNumberInput.value[0] ===
         this.cardNumberInput.value[this.cardNumberInput.value.length - 1] &&
