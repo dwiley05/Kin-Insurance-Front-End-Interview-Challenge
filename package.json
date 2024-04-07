@@ -1,0 +1,21 @@
+{
+  "name": "creditcard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "http-server",
+    "builddeploy": "npm run build &&  npm run start",
+    "build:tests": "tsc --outDir ./dist/tests ./tests/*.ts",
+    "test": "npm run build:tests && node ./dist/tests/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "typescript": "^5.4.4"
+  }
+}

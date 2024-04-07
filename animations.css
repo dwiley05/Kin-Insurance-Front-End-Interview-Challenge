@@ -1,0 +1,40 @@
+@keyframes bounce2 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes input-grow {
+  from {
+    border-bottom-width: 2px;
+  }
+  to {
+    border-bottom-width: 8px;
+  }
+}
+
+.bounce2 {
+  animation: bounce2 1.5s 2 ease;
+}
+
+input:focus {
+  animation: input-grow 1s forwards;
+  border-bottom: 2px solid var(--accent-color, #007055);
+}
+
+@media (max-width: 768px) {
+  input:focus {
+    animation: input-grow 0.5s forwards;
+    border-bottom: 2px solid var(--accent-color, #007055);
+  }
+}

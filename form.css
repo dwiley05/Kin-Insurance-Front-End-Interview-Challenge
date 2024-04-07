@@ -1,0 +1,124 @@
+form {
+  margin-top: 3em;
+}
+
+.top-form,
+.bottom-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-form {
+  height: 4em;
+}
+
+.bottom-form {
+  margin-top: 1em;
+  height: 4em;
+}
+
+.top-form > div,
+.bottom-form > div {
+  margin-left: 20px;
+}
+
+.top-form > div:last-child,
+.bottom-form > div:last-child {
+  margin-right: 0;
+}
+
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background-color: white;
+  border-color: var(--accent-color, #007055);
+  font-size: 1.1rem;
+}
+
+.top-form input,
+.bottom-form input {
+  display: flex;
+}
+
+.top-form label,
+.bottom-form label {
+  font-size: 0.7rem;
+  color: var(--primary-color, #167c80);
+}
+
+.card-number-input {
+  width: 15em;
+}
+
+.cvv-input {
+  width: 8em;
+}
+
+.first-name-input {
+  width: 12em;
+}
+
+@media (max-width: 768px) {
+  .top-form,
+  .bottom-form {
+    flex-direction: column;
+  }
+
+  .top-form > div,
+  .bottom-form > div {
+    margin-left: 0;
+    margin-bottom: 15px;
+    height: 6em;
+  }
+
+  input,
+  button {
+    font-size: 1rem;
+    padding: 15px;
+    width: 100%;
+  }
+
+  button {
+    margin-left: 0;
+  }
+
+  form {
+    margin-top: 2em;
+    width: 85vw;
+  }
+
+  .bottom-form,
+  .top-form {
+    height: auto;
+  }
+
+  input {
+    font-size: 1.1rem;
+  }
+
+  .cvv-input {
+    width: 90%;
+  }
+
+  .first-name-input {
+    width: 90%;
+  }
+
+  .card-number-input {
+    width: 90%;
+  }
+
+  .expiration-date-input {
+    width: 90%;
+  }
+
+  .last-name-input {
+    width: 90%;
+  }
+
+  .zip-code-input {
+    width: 90%;
+  }
+}
