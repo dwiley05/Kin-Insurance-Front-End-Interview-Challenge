@@ -6,7 +6,7 @@ I've decided to make their challenge public so they can also waste some time bui
 
 The web application itself was fun to build as they requested no frameworks and to use pure javascript/TypeScript. It was a great throwback to building apps before web frameworks became widely used. 
 
-Below is the steps build and run the application.  
+Below are the steps build and run the application.  
 
 A simple web application to validate and submit credit card information.
 
