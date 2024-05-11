@@ -1,4 +1,12 @@
-# Credit Card Form Application
+# Kin Insurance Front End Interview Challenge
+
+After over a month of interviews with Kin Insurance, I recieved a rejection saying I was impressive but not a "perfect fit at this time". This was after 5+ days between emails and me putting in a lot of effort on the challenge and interviews. 
+
+I've decided to make their challenge public so they can also waste some time building a new challenge if this happens to get seen. I would rather share what I have worked on then keep it in a private repo so potential employers can view it. 
+
+The web application itself was fun to build as they requested no frameworks and to use pure javascript/TypeScript. It was a great throwback to building apps before web frameworks became widely used. 
+
+Below is the steps build and run the application.  
 
 A simple web application to validate and submit credit card information.
 
