@@ -30,7 +30,7 @@ This project is a standalone credit card form that validates user input before s
 - Start the application: `npm run start`
 - Access the application in your web browser at `http://localhost:8080`
 
-### Running TestsW
+### Running Tests
 
 - Compile the test files: `npm run build:tests`
 - Run the tests: `npm run test`
